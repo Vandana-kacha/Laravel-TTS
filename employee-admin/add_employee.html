@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Employee / Add Employee</title>
+        <!-- Google Fonts -->
+        <link href="https://fonts.gstatic.com" rel="preconnect" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+        <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+        <link href="assets/css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- ======= Header ======= -->
+        <header id="header" class="header fixed-top d-flex align-items-center">
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="dashboard.html" class="logo d-flex align-items-center">
+                    <span class="d-none d-lg-block">Employee Admin</span>
+                </a>
+            </div>
+            <!-- End Logo -->
+
+            <div class="search-bar">
+                <form class="search-form d-flex align-items-center" method="POST" action="#">
+                    <input type="text" name="query" placeholder="Search" title="Enter search keyword" />
+                    <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+            <!-- End Search Bar -->
+
+            <nav class="header-nav ms-auto">
+                <ul class="d-flex align-items-center">
+                    <li class="nav-item d-block d-lg-none">
+                        <a class="nav-link nav-icon search-bar-toggle" href="#">
+                            <i class="bi bi-search"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item pe-3">
+                        <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#">
+                            <span class="d-none d-md-block ps-2">Vandana.k</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item pe-3">
+                        <a class="d-flex align-items-center" href="#">
+                            <i class="bi bi-person"></i>
+                            <span class="d-none d-md-block ps-2">My Profile</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item pe-3">
+                        <a class="d-flex align-items-center" href="#">
+                            <i class="bi bi-box-arrow-right"></i>
+                            <span class="d-none d-md-block ps-2">Sign Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- End Header -->
+
+        <!-- ======= Sidebar ======= -->
+        <aside id="sidebar" class="sidebar">
+            <ul class="sidebar-nav" id="sidebar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">
+                        <i class="bi bi-grid"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#"> <i class="bi bi-journal-text"></i><span>Admin Settings</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+                    <ul id="forms-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="#"> <i class="bi bi-circle"></i><span>Admin Users</span> </a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="bi bi-circle"></i><span>Settings</span> </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#"> <i class="bi bi-menu-button-wide"></i><span>Employees</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+                    <ul id="components-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="manage_employee.html"> <i class="bi bi-circle"></i><span>Manage Employee</span> </a>
+                        </li>
+                        <li>
+                            <a href="add_employee.html"> <i class="bi bi-circle"></i><span>Add Employee</span> </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#"> <i class="bi bi-layout-text-window-reverse"></i><span>Leave Mgmt</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+                    <ul id="tables-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="manage_leave.html"> <i class="bi bi-circle"></i><span>Leaves</span> </a>
+                        </li>
+                        <li>
+                            <a href="add_leave.html"> <i class="bi bi-circle"></i><span>Add Leave</span> </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="faq.html">
+                        <i class="bi bi-question-circle"></i>
+                        <span>F.A.Q</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- End Sidebar-->
+
+        <main id="main" class="main">
+            <div class="pagetitle">
+                <h1>Add Employee</h1>
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="manage_employee.html">Home</a></li>
+                        <li class="breadcrumb-item active">Add Employees</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <section class="section faq">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Add Employee</h5>
+
+                                <form class="row g-3">
+                                    <div class="col-md-12">
+                                        <label for="inputName5" class="form-label">Employee Name</label>
+                                        <input type="text" class="form-control" id="inputName5" />
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class="form-label">Join Date</label>
+                                        <input type="text" class="form-control" id="join_date" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputEmail5" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail5" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputPassword5" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword5" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="birthdate" class="form-label">Birthdate</label>
+                                        <input type="text" class="form-control" id="birthdate" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Designation</label>
+                                        <select id="designation" class="form-select">
+                                            <option selected>Choose...</option>
+                                            <option>Web Developer</option>
+                                            <option>Designer</option>
+                                            <option>HR</option>
+                                            <option>Ui / Ux Designer</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class="form-label">Total Leaves</label>
+                                        <input type="text" class="form-control" id="total_leave" placeholder="20" />
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="inputAddress5" class="form-label">Address</label>
+                                        <input type="text" class="form-control" id="inputAddres5s" placeholder="1234 Main St" />
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="inputAddress2" class="form-label">Address 2</label>
+                                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="inputState" class="form-label">State</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Choose...</option>
+                                            <option>Maharashtra</option>
+                                            <option>Gujarat</option>
+                                            <option>Punjab</option>
+                                            <option>Chennai</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputCity" class="form-label">City</label>
+                                        <input type="text" class="form-control" id="inputCity" />
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <label for="inputZip" class="form-label">Zip</label>
+                                        <input type="text" class="form-control" id="inputZip" />
+                                    </div>
+
+                                    <div class="text-left">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button type="reset" class="btn btn-secondary">Reset</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- End #main -->
+
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
